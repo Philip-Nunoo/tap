@@ -1,0 +1,25 @@
+nav{
+	ul{
+		display: block;
+		border: solid 1px #CCC;
+		border-width: 1px 0px;
+		padding: 0px;
+		text-align: center;
+
+		li{
+			display: inline-block;
+			a{
+				display: block;
+				font-size: 1.1rem;
+				font-weight: 100;
+				padding: 0.8rem 0.7rem;
+				color: #8F8F8F;
+
+				&:hover{
+					text-decoration: none;					
+					color: #5F5F5F;
+				}
+			}
+		}
+	}
+}

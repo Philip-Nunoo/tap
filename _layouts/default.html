@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <header class="holder masthead">
+    <h1 class="masthead-title">
+      <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+      <small>{{ site.tagline }}</small>
+    </h1>
+  </header>
+  <nav class='holder'>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/submit">Recommend a startup</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </nav>
+
+  <main class='holder'>
+    <div class="contents">
+      {{ content }}      
+    </div>
+    <div class="sidenav">
+      The African Pool
+    </div>
+    <div class="clear"></div>
+  </main>
+
+  <footer class="footer">
+    <small>
+      &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+    </small>
+  </footer>  
+  <!-- <div class="container content"></div> -->
+
+</body>
+</html>
